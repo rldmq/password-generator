@@ -1,0 +1,126 @@
+/* 
+    GLOBAL
+*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+}
+
+/* 
+    MAIN
+*/
+body{
+    background: #1F2937;
+}
+
+.app-container{
+    width: 600px;
+    height: 500px;
+    padding: 40px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#theme{
+    display: block;
+    padding: 5px;
+    border-radius: 3px;
+    text-align: right;
+    margin-left: auto;
+}
+
+main{
+    margin-top: 40px;
+}
+
+
+.motto{
+    font-family: "Karla", sans-serif;
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+}
+
+.text-green{
+    font-size: 40px;
+}
+
+.text-standard{
+    font-size: 20px;
+    color: white;
+    margin-top: 10px;
+}
+
+
+.text-green,
+#pass-one,
+#pass-two{
+    color: #4ADF86;
+}
+
+.generate-btn{
+    font-size: 16px;
+    background: #10B981;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 7px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.border{
+    border-top: 2px solid #2F3E53;
+}
+
+.settings-container{
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+.password-container{
+    margin-top: 30px;
+    padding-top: 30px;
+    display: flex;
+    gap: 30px;
+}
+
+#pass-one,
+#pass-two{
+    font-size: 16px;
+    width: 210px;;
+    height: 40px;
+    background: #273549;
+    border-radius: 5px;
+    line-height: 40px;
+    padding-left: 15px;
+}
+
+label{
+    color: white;
+    font-weight: 600;
+}
+
+.pass-length{
+    width: 50px;
+}
+
+.checkbox{
+    width: 16px;
+    height: 16px;
+}
+
+input{
+    margin-left: 5px;
+    vertical-align: middle;
+}
