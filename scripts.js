@@ -50,9 +50,17 @@ function generatePassword(){
     const passOneEl = document.getElementById("pass-one")
     const passTwoEl = document.getElementById("pass-two")
 
-    const length = document.getElementById('length').value
+    let length = document.getElementById('length').value
     const numbers = document.getElementById('numbers').checked
     const symbols = document.getElementById('symbols').checked
+
+    if(length > 15){
+        length = 15
+        document.getElementById('length').value = 15
+    }else if(length < 6){
+        length = 6
+        document.getElementById('length').value = 6
+    }
 
     let passOne = ""
     let passTwo = ""
@@ -74,6 +82,7 @@ function generatePassword(){
 
     passOneEl.textContent = passOne
     passTwoEl.textContent = passTwo
+
 }
 
 function copyPassword(e){
