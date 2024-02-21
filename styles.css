@@ -95,15 +95,17 @@ main{
     gap: 30px;
 }
 
-#pass-one,
-#pass-two{
+.pass{
     font-size: 16px;
-    width: 210px;;
+    width: 250px;;
     height: 40px;
     background: #273549;
     border-radius: 5px;
     line-height: 40px;
     padding-left: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 label{
@@ -123,4 +125,19 @@ label{
 input{
     margin-left: 5px;
     vertical-align: middle;
+}
+
+button.copy{
+    border: none;
+    border-radius: 5px;
+    background: #1F2937;
+    color: #273549;
+    font-size: 16px;
+    padding: 3px;
+    margin-right: 10px;
+}
+
+#pass-one,
+#pass-two{
+    display: inline-block;
 }

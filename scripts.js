@@ -76,3 +76,15 @@ function generatePassword(){
     passTwoEl.textContent = passTwo
 }
 
+function copyPassword(e){
+    const passEl = e.target.parentNode
+    const password = passEl.firstChild.textContent
+    navigator.clipboard.writeText(password)
+
+    passEl.style.border = "1px solid #10B981"
+
+    setTimeout(()=>{
+        passEl.style.border = "none"
+    }, 100)
+}
+
